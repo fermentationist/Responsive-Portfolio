@@ -263,14 +263,20 @@ input[type=submit] {
     margin-left:0px;
     margin-right:100px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
 }
 
 
 
 @media screen and (max-width:768px){
   nav {
+<<<<<<< HEAD
     padding-right:40px;
+=======
+>>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
     margin-left:0;
     margin-right:25px;
     float:right;
@@ -302,6 +308,7 @@ input[type=submit] {
     padding:0;
   }
   nav {
+<<<<<<< HEAD
     position:static;
     display:block;
     padding-left:40px;
@@ -319,6 +326,12 @@ input[type=submit] {
   }
   nav a::last-child{
     padding-left:60px;
+=======
+    display:block;
+    /*padding-left:160px;*/
+    margin-right:auto;
+    float:right;
+>>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
   }
   a#logo {
     width:100%;
@@ -333,9 +346,12 @@ input[type=submit] {
     width:100%;
     max-width:none;
   }
+<<<<<<< HEAD
   #main-container {
   padding-top: 0px;
 }
+=======
+>>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
 
 }
 
