@@ -243,10 +243,17 @@ input[type=submit] {
   clear:both;
 }
 
+html, body {
+  margin:0;
+  padding:0;
+  min-height:100%;
+  min-width:100%;
+}
+
 @media screen and (max-width:980px){
   section.main-section {
   max-width: 420px;
-  margin-left:80px;
+  margin-left:60px;
   }
   img.auth-image{
     width:100%;
@@ -256,34 +263,31 @@ input[type=submit] {
     margin-left:40px;
   }
   header#masthead{
-    padding-left:90px;
+    padding-left:60px;
   }
   nav {
- /*   float:left;*/
     margin-left:0px;
     margin-right:100px;
   }
-<<<<<<< HEAD
 
-=======
->>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
+
 }
 
 
-
-@media screen and (max-width:768px){
+/*changed from 768px- starts to fail between 785 & 768*/
+@media screen and (max-width:785px){
   nav {
-<<<<<<< HEAD
+
     padding-right:40px;
-=======
->>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
+
     margin-left:0;
     margin-right:25px;
     float:right;
   }
   section.main-section {
+    display:block;
     max-width:720px;
-    margin-left:20px;
+    margin-left:20px
   }
   img.auth-image{
     max-width:360px;
@@ -302,56 +306,86 @@ input[type=submit] {
 
 
 
-@media (max-width:640px){
+@media screen and (max-width:640px){
+
+  img.auth-image{
+    max-width:none;
+    width:100%;
+    padding-bottom:15px;
+  }
   header#masthead {
     position:static;
+    display:block;
     padding:0;
+    width:100%;
+    right:;
+    overflow:hidden;
   }
   nav {
-<<<<<<< HEAD
-    position:static;
-    display:block;
-    padding-left:40px;
-    padding-right:40px;
-    margin:15px 0;
-    float:left;
-    width:100%;
-  }
-  nav a{
-    padding:0 60px;
-  }
-  nav a::first-child{
-  padding-right:60px;
-/*  margin:0;*/
-  }
-  nav a::last-child{
-    padding-left:60px;
-=======
-    display:block;
-    /*padding-left:160px;*/
-    margin-right:auto;
-    float:right;
->>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
-  }
-  a#logo {
-    width:100%;
-    padding-right:;
-  }
-    section.main-section {
-/*    max-width:none;*/
+    padding:20px 0;
     width:100%;
     margin:0;
   }
-  body {
-    width:100%;
-    max-width:none;
+  nav a:first-child{
+    margin-left:10%;
   }
-<<<<<<< HEAD
-  #main-container {
+  nav a{
+    padding:0 7%;
+  }
+ 
+  a#logo {
+    width:100%;
+    padding-right:;
+    text-align:center;
+  }
+  section.main-section {
+    margin:0 30px;
+    width:90%;
+  }
+
+  div#main-container {
   padding-top: 0px;
+  width:100%;
+  max-width:none;
 }
-=======
->>>>>>> 2a46b0edf2956a72f3e31e568cf740c965881ac3
+  .sidebar {
+    display:block;
+    margin-left:0;
+    margin-top:30px;
+    margin:30px;
+    width:90%;
+  }
+
+}
+
+@media screen and (max-width:455px){
+  nav a:first-child {
+    margin-left: 6%;
+  }
+  nav a {
+    padding:0 5%;
+  }
+  section.main-section {
+    margin:0 30px 0 20px;
+  }
+  .sidebar {
+    margin-left:20px;
+  }
+}
+
+@media screen and (max-width:340px){
+  nav a:first-child {
+    margin-left: 6%;
+  }
+  nav a {
+    padding:0 4%;
+  }
+    section.main-section {
+    margin-left:20px;
+  }
+  .sidebar {
+    margin-left:20px;
+  }
 
 }
 
